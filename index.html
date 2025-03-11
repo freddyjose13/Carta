@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Daniel</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="google-adsense-account" content="ca-pub-4704501585981299">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="envelope">
+
+  <div class="envelope-inner">
+
+    <div class="envelope-front">
+
+      <div class="address">
+        <p><span>Para:</span> <span>Daniel Alfonso Jose</span></p>
+        <p><span>De:</span> <span>El amor de tu vida</span></p>
+      </div>
+
+    </div>
+
+    <div class="envelope-back">
+      <div class="top-fold"></div>
+
+      <div class="letter">
+
+        
+        <img src="daniel.png" alt="love1" class="custom-image">
+      
+        <p>Solo para decirte que: <span class="highlight">Cada día me caes más mal!</span></p>
+      
+        
+        <img src="piolin.png" alt="love2" class="custom-image2">
+      
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+<!-- partial -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const audio = new Audio("choque.mp3"); 
+    
+    const playAudio = () => {
+        audio.play().catch(error => {
+            console.log("Reproducción automática bloqueada, esperando interacción del usuario.");
+        });
+    };
+    
+    playAudio();
+    
+    document.body.addEventListener("click", () => {
+        audio.play();
+    }, { once: true });
+});
+ </script>
+
+</body>
+</html>
